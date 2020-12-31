@@ -19,6 +19,7 @@ func RunWindowsServer() {
 	}
 	initialize.InitWkMode()
 	Router := initialize.Routers()
+	Router.Run(":9000")
 	Router.Static("/form-generator", "./resource/page")
 
 	address := fmt.Sprintf(":%d", global.GVA_CONFIG.System.Addr)
