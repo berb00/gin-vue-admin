@@ -78,15 +78,3 @@ qiniu:
   secret-key: 'pgdbqEsf7ooZh7W3xokP833h3dZ_VecFXPDeG5JY'
   use-cdn-domains: false
 
-## OSS相关配置信息
-aliyun:
-    endpoint: 'oss-cn-shanghai.aliyuncs.com'          # oss对外服务的访问域名
-    accessKeyId: 'LTAI4GCSRZt8uv2rCM5W1nHz'           # 访问身份验证中用到用户标识
-    accessKeySecret: 'FG1mjMUiQl4Ngi85QOWtmVvrRBHKGH' # 用户用于加密签名字符串和oss用来验证签名字符串的密钥
-    bucketName: 'phoenix-blog'                        # oss的存储空间
-    dir: ''                                           # 设置文件存放文件夹 随便写  上传自动生成
-    prefix: 'mall/images/'                            # 上传文件夹路径前缀
-    folder : 'md'
-    webUrl: 'https://phoenix-blog.oss-cn-shanghai.aliyuncs.com'
-#    expire:      失效时间
-#    key: group1/pic     #目录前缀
