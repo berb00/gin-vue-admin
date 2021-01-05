@@ -301,6 +301,7 @@ export default {
     },
     reload() {},
     async update() {
+        console.log('sss', JSON.stringify(this.config))
       const res = await setSystemConfig({ config: this.config });
       if (res.code == 0) {
         this.$message({
